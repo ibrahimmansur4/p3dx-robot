@@ -8,6 +8,7 @@
   <xacro:include filename="pioneer3dx_swivel.xacro"/>
   <xacro:include filename="pioneer3dx_sonar.xacro"/>
   <xacro:include filename="pioneer3dx_plugins.xacro"/>
+  <xacro:include filename="camera.xacro"/>
 
   <xacro:macro name="pioneer3dx_body" params="name parent meshes">
 
@@ -27,6 +28,13 @@
     <xacro:pioneer_wheel side="right" parent="${name}" xyz="0 -0.15 0.09" rpy="0 0 0" radius="0.09" meshes="${meshes}"/>
     <xacro:pioneer_wheel side="left" parent="${name}" xyz="0 0.15 0.09" rpy="0 0 0" radius="0.09" meshes="${meshes}"/>
     <xacro:pioneer_swivel parent="${name}" xyz="-0.185 0 0.055" rpy="0 0 0" meshes="${meshes}"/>
+
+    <!-- Camera -->
+    <xacro:camera name="camera" parent="${name}" xyz="0.125 0 0.595" rpy="0 0 0" />
+
+    <!-- Add other components as needed -->
+
+
 
   </xacro:macro>
 </robot>

@@ -1,0 +1,56 @@
+[3.791s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/ibrahim/p3dx-robot']
+[3.792s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/ibrahim/p3dx-robot'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x770b0b110a90>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x770b0b282ef0>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x770b0b282ef0>>)
+[3.956s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.957s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.957s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.957s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.957s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.957s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ibrahim/p3dx-robot'
+[3.957s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot) by extensions ['ignore', 'ignore_ament_install']
+[3.958s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot) by extension 'ignore'
+[3.958s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot) by extension 'ignore_ament_install'
+[3.958s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot) by extensions ['colcon_pkg']
+[3.958s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot) by extension 'colcon_pkg'
+[3.958s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot) by extensions ['colcon_meta']
+[3.958s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot) by extension 'colcon_meta'
+[3.958s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot) by extensions ['ros']
+[3.959s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot) by extension 'ros'
+[3.988s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot) by extensions ['cmake', 'python']
+[3.988s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot) by extension 'cmake'
+[3.988s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot) by extension 'python'
+[3.989s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot) by extensions ['python_setup_py']
+[3.989s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot) by extension 'python_setup_py'
+[3.989s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/log) by extensions ['ignore', 'ignore_ament_install']
+[3.990s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/log) by extension 'ignore'
+[3.990s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/log) ignored
+[3.990s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_control) by extensions ['ignore', 'ignore_ament_install']
+[3.990s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_control) by extension 'ignore'
+[3.990s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_control) by extension 'ignore_ament_install'
+[3.990s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_control) by extensions ['colcon_pkg']
+[3.990s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_control) by extension 'colcon_pkg'
+[3.991s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_control) by extensions ['colcon_meta']
+[3.991s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_control) by extension 'colcon_meta'
+[3.991s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_control) by extensions ['ros']
+[3.991s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_control) by extension 'ros'
+[3.998s] DEBUG:colcon.colcon_core.package_identification:Package '/home/ibrahim/p3dx-robot/p3dx_control' with type 'ros.catkin' and name 'p3dx_control'
+[3.998s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_description) by extensions ['ignore', 'ignore_ament_install']
+[3.999s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_description) by extension 'ignore'
+[3.999s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_description) by extension 'ignore_ament_install'
+[3.999s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_description) by extensions ['colcon_pkg']
+[3.999s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_description) by extension 'colcon_pkg'
+[3.999s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_description) by extensions ['colcon_meta']
+[3.999s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_description) by extension 'colcon_meta'
+[3.999s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_description) by extensions ['ros']
+[3.999s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_description) by extension 'ros'
+[4.001s] DEBUG:colcon.colcon_core.package_identification:Package '/home/ibrahim/p3dx-robot/p3dx_description' with type 'ros.catkin' and name 'p3dx_description'
+[4.001s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[4.002s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_gazebo) by extension 'ignore'
+[4.002s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_gazebo) by extension 'ignore_ament_install'
+[4.002s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_gazebo) by extensions ['colcon_pkg']
+[4.002s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_gazebo) by extension 'colcon_pkg'
+[4.002s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_gazebo) by extensions ['colcon_meta']
+[4.002s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_gazebo) by extension 'colcon_meta'
+[4.002s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_gazebo) by extensions ['ros']
+[4.002s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ibrahim/p3dx-robot/p3dx_gazebo) by extension 'ros'
+[4.005s] DEBUG:colcon.colcon_core.package_identification:Package '/home/ibrahim/p3dx-robot/p3dx_gazebo' with type 'ros.catkin' and name 'p3dx_gazebo'
+[4.005s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

@@ -1,5 +1,7 @@
 # Pioneer 3-DX Simulator
-This repo contains the materials for Pioneer 3-DX mobile robot simulation in Gazebo. The original code comes from https://github.com/BruceChanJianLe/p3dx. Thanks go to CHAN JIAN LE.
+This repo contains the materials for Pioneer 3-DX mobile robot simulation in Gazebo. The original code comes from https://github.com/BruceChanJianLe/p3dx. Thanks goes to CHAN JIAN LE. 
+
+I have forked this from https://github.com/NKU-MobFly-Robotics/p3dx and added camera to the robot.
 
 ## Requirements
 The ROS packages of gazebo_ros_control, diff_drive_controller, joint_state_controller, and robot_state_publisher are required.

@@ -2,7 +2,7 @@
 <robot xmlns:xacro="http://wiki.ros.org/xacro">
   <xacro:property name="M_PI" value="3.1415926535897931" />
   <xacro:property name="ray_count" value="10" />
-  <xacro:property name="field_of_view" value="0" /> 
+  <xacro:property name="field_of_view" value="1.57" /> 
   <xacro:property name="min_range" value="0.1" />
   <xacro:property name="max_range" value="5.0" />
   <xacro:property name="ros_topic" value="sonar_scan" />
@@ -57,7 +57,7 @@
             <vertical>
               <samples>${ray_count}</samples>
               <resolution>1</resolution>
-              <min_angle>-${field_of_view/2}</min_angle>
+              <min_angle>-${field_of_view/20}</min_angle>
               <max_angle> ${field_of_view/2}</max_angle>
             </vertical>
           </scan>

@@ -30,7 +30,7 @@
     <xacro:pioneer_swivel parent="${name}" xyz="-0.185 0 0.055" rpy="0 0 0" meshes="${meshes}"/>
 
     <!-- Camera -->
-    <xacro:camera name="camera" parent="${name}" xyz="0.125 0 0.595" rpy="0 0 0" />
+    <xacro:camera name="camera" parent="${name}" xyz="0.0 0 0.595" rpy="0 0 -1.57" />
 
     <!-- Add other components as needed -->
 

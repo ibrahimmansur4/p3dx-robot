@@ -9,6 +9,7 @@
   <arg name="recording" default="false" />
   <arg name="debug" default="false" />
 
+
   <!-- Start Gazebo with your robot description -->
   <include file="$(find p3dx_gazebo)/launch/p3dx_gazebo.launch">
     <arg name="world_name" value="$(arg world_name)" />
@@ -19,6 +20,12 @@
     <arg name="debug" value="$(arg debug)" />
   </include>
 
+  <!-- Launch map_server -->
+  <node name="map_server" pkg="map_server" type="map_server" args="/root/catkin_ws/src/my_robot_control/maps/mymap_2.yaml" /> 
+
+  <!-- Launch gmapping -->
+  <include file="$(find gmapping)/launch/slam_gmapping_pr2.launch" />
   <!-- Launch RVIZ with your configuration -->
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find p3dx_gazebo)/launch/pioneer3dx.rviz"/>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find p3dx_gazebo)/launch/pioneer3dx.rviz"/> 
+
 </launch>

@@ -5,9 +5,12 @@
   <arg name="robot_namespace" default="/"/>
 
   <!-- Robot pose -->
-  <arg name="initial_pose_x" default="0.0"/>
-  <arg name="initial_pose_y" default="0.0"/>
-  <arg name="initial_pose_a" default="1.5708"/>
+  <arg name="initial_pose_x" default="0"/>
+  <arg name="initial_pose_y" default="0"/>
+  <arg name="initial_pose_a" default="0"/>
+  <!-- <arg name="initial_pose_x" default="-4.571235"/>
+  <arg name="initial_pose_y" default="-6.670997"/>
+  <arg name="initial_pose_a" default="0"/> -->
 
   <!-- Load robot description -->
   <include file="$(find p3dx_description)/launch/description.launch" />
@@ -22,5 +25,5 @@
       -model $(arg robot_namespace)" />
 
   <include file="$(find p3dx_control)/launch/control.launch"/>
-
+  
 </launch>
